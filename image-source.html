@@ -10,64 +10,67 @@
     font-family: "DejaVu Sans", "Noto Sans", sans-serif;
     background: #f8f4e8;
     color: #191919;
-    padding: 18px 30px 14px 30px;
+    padding: 12px 26px 8px 26px;
   }
   .serif { font-family: "DejaVu Serif", "Noto Serif", serif; }
 
   /* Masthead */
-  .masthead { text-align: center; border-bottom: 4px solid #191919; padding-bottom: 8px; }
-  .masthead h1 { font-size: 56px; line-height: 1.02; letter-spacing: 1px; font-weight: bold; }
+  .masthead { text-align: center; border-bottom: 4px solid #191919; padding-bottom: 5px; }
+  .masthead h1 { font-size: 40px; line-height: 1; letter-spacing: 1px; font-weight: bold; }
   .masthead h1 .red { color: #b02a20; }
   .dateline {
     display: flex; justify-content: space-between; align-items: center;
-    border-bottom: 2px solid #191919; padding: 7px 2px; margin-top: 8px;
+    border-bottom: 2px solid #191919; padding: 5px 2px; margin-top: 5px;
   }
-  .dateline .date { font-size: 24px; font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
-  .dateline .tag { font-size: 15px; color: #555; letter-spacing: 1px; white-space: nowrap; }
+  .dateline .date { font-size: 20px; font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
+  .dateline .tag { font-size: 13px; color: #555; letter-spacing: 1px; white-space: nowrap; }
 
   /* Lead story */
   .lead {
-    display: flex; gap: 20px; margin-top: 14px;
-    border-bottom: 2px solid #191919; padding-bottom: 14px;
+    display: flex; gap: 16px; margin-top: 9px;
+    border-bottom: 2px solid #191919; padding-bottom: 8px;
   }
-  .lead .art { flex: 0 0 330px; }
-  .lead .art svg { display: block; width: 330px; height: 232px; }
-  .lead .art .cap { font-size: 13px; color: #555; margin-top: 4px; line-height: 1.3; }
+  .lead .art { flex: 0 0 300px; }
+  .lead .art svg { display: block; width: 300px; height: 132px; }
+  .lead .art .cap { font-size: 11px; color: #555; margin-top: 3px; line-height: 1.25; }
   .kicker {
-    font-size: 16px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
+    font-size: 12px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
     text-transform: uppercase;
   }
-  .lead h2 { font-size: 38px; line-height: 1.08; margin: 6px 0 8px 0; font-weight: bold; }
-  .lead p { font-size: 19px; line-height: 1.35; }
+  .lead h2 { font-size: 28px; line-height: 1.06; margin: 4px 0 5px 0; font-weight: bold; }
+  .lead p { font-size: 15px; line-height: 1.3; }
   .lead p b { color: #b02a20; }
 
-  /* Story grid */
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; margin-top: 12px; }
-  .card { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid #b9b2a0; }
-  .card .icon { flex: 0 0 74px; }
-  .card .icon svg { display: block; width: 74px; height: 74px; }
-  .card h3 { font-size: 22px; line-height: 1.12; font-weight: bold; margin: 3px 0 5px 0; }
-  .card p { font-size: 16.5px; line-height: 1.32; color: #2b2b2b; }
-
-  /* COP31 strip */
-  .climate {
-    display: flex; gap: 14px; align-items: center;
-    background: #1d3a5f; color: #f8f4e8; margin-top: 12px; padding: 9px 16px;
+  /* Map strip */
+  .mapstrip {
+    display: flex; gap: 16px; align-items: center;
+    margin-top: 7px; border-bottom: 2px solid #191919; padding-bottom: 7px;
   }
-  .climate svg { flex: 0 0 56px; width: 56px; height: 56px; display: block; }
-  .climate .kicker { color: #ffd34d; }
-  .climate h3 { font-size: 24px; line-height: 1.15; font-weight: bold; margin: 2px 0 3px 0; }
-  .climate p { font-size: 17px; line-height: 1.3; color: #e8e4d8; }
+  .mapstrip svg { flex: 0 0 400px; width: 400px; height: 58px; display: block; }
+  .mapstrip .counts { font-size: 12.5px; line-height: 1.45; color: #2b2b2b; }
+  .mapstrip .counts b { color: #b02a20; }
+  .mapstrip .counts .big { font-size: 15px; font-weight: bold; letter-spacing: 1px; }
 
-  /* Ticker + footer */
-  .ticker {
-    margin-top: 11px; font-size: 16px; line-height: 1.4;
-    border-top: 2px solid #191919; border-bottom: 2px solid #191919; padding: 7px 2px;
+  /* Story columns */
+  .cols { columns: 3; column-gap: 16px; margin-top: 7px; }
+  .sec {
+    font-size: 11.5px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
+    text-transform: uppercase; border-bottom: 1px solid #b02a20;
+    padding-bottom: 2px; margin: 6px 0 1px 0;
+    break-after: avoid; break-inside: avoid;
   }
-  .ticker b { color: #b02a20; }
+  .sec:first-child { margin-top: 0; }
+  .it {
+    break-inside: avoid;
+    font-size: 11.5px; line-height: 1.24;
+    padding: 3.5px 0; border-bottom: 1px solid #cfc7b4;
+  }
+  .it b { color: #191919; }
+
+  /* Footer */
   .footer {
-    margin-top: 8px; display: flex; justify-content: space-between;
-    font-size: 13.5px; color: #555;
+    margin-top: 6px; display: flex; justify-content: space-between;
+    font-size: 11.5px; color: #555;
   }
 </style>
 </head>
@@ -78,35 +81,35 @@
 </div>
 <div class="dateline">
   <span class="date serif">WEDNESDAY, 18 NOVEMBER 2026</span>
-  <span class="tag">ONE DAY &middot; SIX STORIES</span>
+  <span class="tag">34 STORIES &middot; 6 CONTINENTS &middot; ONE DAY</span>
 </div>
 
 <div class="lead">
   <div class="art">
-    <svg viewBox="0 0 330 232" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="330" height="232" fill="#16283f"/>
-      <circle cx="272" cy="42" r="26" fill="#f4d35e" opacity="0.9"/>
-      <path d="M0 168 Q 80 150 165 168 T 330 168 L 330 248 L 0 248 Z" fill="#1d3a5f"/>
-      <path d="M0 190 Q 90 176 180 190 T 330 190 L 330 248 L 0 248 Z" fill="#274b73"/>
+    <svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="300" height="140" fill="#16283f"/>
+      <circle cx="248" cy="26" r="17" fill="#f4d35e" opacity="0.9"/>
+      <path d="M0 100 Q 70 88 150 100 T 300 100 L 300 140 L 0 140 Z" fill="#1d3a5f"/>
+      <path d="M0 114 Q 80 104 160 114 T 300 114 L 300 140 L 0 140 Z" fill="#274b73"/>
       <!-- tanker 1 -->
       <g fill="#0c1522">
-        <rect x="28" y="196" width="120" height="18" rx="2"/>
-        <rect x="52" y="178" width="34" height="18"/>
-        <rect x="118" y="186" width="10" height="10"/>
+        <rect x="24" y="118" width="104" height="12" rx="2"/>
+        <rect x="44" y="106" width="28" height="12"/>
+        <rect x="100" y="112" width="8" height="7"/>
       </g>
       <!-- tanker 2 -->
       <g fill="#0c1522">
-        <rect x="196" y="202" width="104" height="16" rx="2"/>
-        <rect x="228" y="186" width="28" height="16"/>
+        <rect x="176" y="121" width="92" height="11" rx="2"/>
+        <rect x="204" y="110" width="24" height="11"/>
       </g>
       <!-- explosion burst -->
       <g>
-        <path d="M252 118 L262 88 L272 112 L286 84 L292 114 L312 100 L298 128 L318 134 L294 142 L302 168 L280 150 L272 178 L262 150 L240 162 L250 138 L228 132 L250 126 Z" fill="#e4572e"/>
-        <path d="M262 122 L268 104 L276 120 L288 108 L286 128 L298 132 L282 140 L284 156 L270 144 L258 154 L260 136 L246 132 L258 126 Z" fill="#f4d35e"/>
+        <path d="M228 72 L236 50 L244 66 L254 46 L260 66 L274 56 L264 74 L278 78 L260 84 L266 100 L250 88 L244 106 L236 88 L220 96 L228 80 L212 76 L228 70 Z" fill="#e4572e"/>
+        <path d="M236 74 L242 60 L248 70 L258 62 L256 76 L266 78 L254 84 L256 94 L246 86 L238 92 L240 80 L230 78 L236 72 Z" fill="#f4d35e"/>
       </g>
       <!-- missile trail -->
-      <path d="M60 60 Q 150 20 246 96" stroke="#f8f4e8" stroke-width="3" fill="none" stroke-dasharray="10 7"/>
-      <circle cx="60" cy="60" r="5" fill="#f8f4e8"/>
+      <path d="M52 38 Q 130 10 222 62" stroke="#f8f4e8" stroke-width="2.5" fill="none" stroke-dasharray="9 6"/>
+      <circle cx="52" cy="38" r="4" fill="#f8f4e8"/>
     </svg>
     <div class="cap">Tankers burn in the Strait of Hormuz after US jets struck an Iranian missile site on Qeshm Island.</div>
   </div>
@@ -117,94 +120,91 @@
   </div>
 </div>
 
-<div class="grid">
-  <div class="card">
-    <div class="icon">
-      <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
-        <rect width="74" height="74" fill="#e8dfc8"/>
-        <path d="M6 52 Q 37 18 68 52" stroke="#1d3a5f" stroke-width="5" fill="none"/>
-        <path d="M6 52 L 68 52" stroke="#1d3a5f" stroke-width="5"/>
-        <path d="M20 40 L 20 52 M 37 32 L 37 52 M 54 40 L 54 52" stroke="#b02a20" stroke-width="4"/>
-        <path d="M30 24 L 44 24 L 37 10 Z" fill="#e4572e"/>
-      </svg>
-    </div>
-    <div>
-      <div class="kicker">Ukraine</div>
-      <h3 class="serif">Kerch Bridge hit for a second night</h3>
-      <p>Ukrainian strikes collapsed a span of the road link to Crimea. Russia hit two bridges in Kyiv, killing at least two.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="icon">
-      <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
-        <rect width="74" height="74" fill="#e8dfc8"/>
-        <path d="M37 8 L 48 34 L 42 34 L 52 66 L 22 66 L 32 34 L 26 34 Z" fill="#1d3a5f"/>
-        <circle cx="37" cy="20" r="4" fill="#f4d35e"/>
-        <path d="M14 66 Q 37 58 60 66" stroke="#b02a20" stroke-width="3" fill="none"/>
-      </svg>
-    </div>
-    <div>
-      <div class="kicker">Asia &middot; Security</div>
-      <h3 class="serif">North Korea fires missile into the Sea of Japan</h3>
-      <p>South Korea's military said Pyongyang launched a ballistic missile eastward on Wednesday.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="icon">
-      <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
-        <rect width="74" height="74" fill="#e8dfc8"/>
-        <g fill="none" stroke="#1d3a5f" stroke-width="4" stroke-linecap="round">
-          <path d="M37 37 m-4 0 a4 4 0 1 1 8 0 a4 4 0 1 1 -8 0"/>
-          <path d="M37 37 m-12 0 a12 12 0 1 1 12 12"/>
-          <path d="M37 37 m-20 0 a20 20 0 1 1 20 20"/>
-          <path d="M37 37 m-27 0 a27 27 0 1 1 27 27"/>
-        </g>
-        <circle cx="37" cy="37" r="3" fill="#b02a20"/>
-      </svg>
-    </div>
-    <div>
-      <div class="kicker">Weather &middot; India</div>
-      <h3 class="serif">Cyclone Akvan bears down on India</h3>
-      <p>The storm over the Bay of Bengal is set to strike the Andhra Pradesh coast on Friday, with gusts to 120 km/h.</p>
-    </div>
-  </div>
-  <div class="card">
-    <div class="icon">
-      <svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg">
-        <rect width="74" height="74" fill="#e8dfc8"/>
-        <rect x="22" y="22" width="30" height="30" rx="3" fill="#1d3a5f"/>
-        <rect x="29" y="29" width="16" height="16" fill="#f4d35e"/>
-        <path d="M26 22 V 14 M 37 22 V 14 M 48 22 V 14 M 26 60 V 52 M 37 60 V 52 M 48 60 V 52 M 22 26 H 14 M 22 37 H 14 M 22 48 H 14 M 60 26 H 52 M 60 37 H 52 M 60 48 H 52" stroke="#1d3a5f" stroke-width="3"/>
-      </svg>
-    </div>
-    <div>
-      <div class="kicker">Business &middot; Tech</div>
-      <h3 class="serif">Nvidia revenue doubles to $115.8bn</h3>
-      <p>Quarterly sales rose 103% on booming data-centre demand; net profit hit $65.3bn.</p>
-    </div>
-  </div>
-</div>
-
-<div class="climate">
-  <svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="28" cy="28" r="24" fill="none" stroke="#ffd34d" stroke-width="3"/>
-    <path d="M8 30 Q 18 18 28 28 T 48 28" fill="none" stroke="#7fc96b" stroke-width="3"/>
-    <path d="M14 38 Q 24 30 34 36" fill="none" stroke="#7fc96b" stroke-width="3"/>
+<div class="mapstrip">
+  <svg viewBox="0 0 400 64" xmlns="http://www.w3.org/2000/svg">
+    <!-- simplified world map, continents in navy, story hotspots in red -->
+    <g fill="#d8cdb2" stroke="#1d3a5f" stroke-width="1">
+      <path d="M28 16 L52 7 L86 9 L96 19 L88 29 L70 37 L58 47 L44 43 L30 33 Z"/>
+      <path d="M78 47 L96 45 L104 57 L98 63 L86 61 L78 55 Z"/>
+      <path d="M188 11 L206 5 L220 11 L216 23 L200 25 L190 19 Z"/>
+      <path d="M192 31 L212 27 L224 37 L220 55 L206 63 L196 52 L190 40 Z"/>
+      <path d="M222 7 L280 3 L320 11 L330 25 L310 38 L280 40 L250 32 L228 23 Z"/>
+      <path d="M312 54 L336 50 L342 60 L322 63 L310 58 Z"/>
+    </g>
+    <g fill="#b02a20">
+      <circle cx="52" cy="22" r="2.4"/>
+      <circle cx="88" cy="58" r="2.4"/>
+      <circle cx="202" cy="15" r="2.4"/>
+      <circle cx="206" cy="45" r="2.4"/>
+      <circle cx="238" cy="30" r="2.4"/>
+      <circle cx="262" cy="30" r="2.4"/>
+      <circle cx="296" cy="22" r="2.4"/>
+      <circle cx="300" cy="40" r="2.4"/>
+      <circle cx="330" cy="57" r="2.4"/>
+      <circle cx="70" cy="45" r="2.4"/>
+    </g>
   </svg>
-  <div>
-    <div class="kicker">Climate &middot; Antalya</div>
-    <h3 class="serif">COP31 talks enter decisive phase</h3>
-    <p>Negotiators work through a draft deal with 144 disputed items as the summit nears its scheduled end on Friday.</p>
+  <div class="counts">
+    <span class="big">AROUND THE WORLD</span><br>
+    <b>Middle East 4</b> &middot; Europe 8 &middot; Asia 7 &middot; Africa 5<br>
+    Americas 5 &middot; Oceania 2 &middot; Science &amp; Culture 3
   </div>
 </div>
 
-<div class="ticker">
-  <b>ALSO TODAY:</b> UN warns of more cold deaths in Gaza as winter sets in &middot; Eisenkot tapped to form Israel&rsquo;s next government &middot; US curbs China&rsquo;s remote access to AI chips &middot; Robert Pattinson named the new James Bond
+<div class="cols">
+
+  <div class="sec">Middle East</div>
+  <div class="it"><b>UN warns of more cold deaths in Gaza.</b> The UN warns more displaced Palestinians will die of cold this winter; Australia, Canada, Italy and Britain press Israel to let aid in.</div>
+  <div class="it"><b>Eisenkot tapped to form Israel&rsquo;s government.</b> President Herzog asks ex-army chief Gadi Eisenkot to build a coalition, passing over caretaker PM Netanyahu.</div>
+  <div class="it"><b>Houthi rocket kills 53 soldiers.</b> A Houthi rocket strike on an army camp kills at least 53 soldiers of Yemen&rsquo;s internationally recognised government.</div>
+
+  <div class="sec">Europe</div>
+  <div class="it"><b>Kerch Bridge hit for a second night.</b> Ukrainian strikes collapse a span of the road link to Crimea; Russia hits two bridges in Kyiv, killing at least two.</div>
+  <div class="it"><b>EU fast-tracks green energy permits.</b> Brussels reaches a provisional deal to speed permits for renewables, grids and storage across the bloc.</div>
+  <div class="it"><b>Estonia to shut Russia border in December.</b> Tallinn will close border crossings with Russia after an attempted attack on a defence company.</div>
+  <div class="it"><b>Hundreds of thousands march in Prague.</b> Protesters demand press independence as parliament debates a contested media law.</div>
+  <div class="it"><b>General strike halts ports and factories.</b> A nationwide strike in Spain disrupts ports and car plants in protest over wages and living costs.</div>
+  <div class="it"><b>Finland opens world&rsquo;s first nuclear waste tomb.</b> Helsinki authorises the world&rsquo;s first permanent repository for spent nuclear fuel.</div>
+  <div class="it"><b>Spain gets an acting ombudsman.</b> &Aacute;ngel Gabilondo ends five years in the post; deputy Teresa Jim&eacute;nez-Becerril takes over.</div>
+  <div class="it"><b>COP31 talks enter decisive phase.</b> Negotiators in Antalya work through a draft deal with 144 disputed items before Friday&rsquo;s deadline.</div>
+
+  <div class="sec">Asia</div>
+  <div class="it"><b>North Korea fires missile into the Sea of Japan.</b> South Korea&rsquo;s military says Pyongyang launched a ballistic missile eastward on Wednesday.</div>
+  <div class="it"><b>Cyclone Akvan bears down on India.</b> The storm over the Bay of Bengal is set to strike Andhra Pradesh on Friday, with gusts to 120 km/h.</div>
+  <div class="it"><b>Nvidia revenue doubles to $115.8bn.</b> Quarterly sales rose 103% on booming data-centre demand; net profit hit $65.3bn.</div>
+  <div class="it"><b>Quad leaders reunite in Manila.</b> Trump, Modi, Takaichi and Albanese meet for the first time in two years, agreeing minerals deals and a 2027 patrol drill.</div>
+  <div class="it"><b>Xi opens APEC summit in Shenzhen.</b> China&rsquo;s president warns unilateralism and protectionism are on the rise as Pacific leaders gather.</div>
+  <div class="it"><b>India lift record 10th SAFF title.</b> India beat Pakistan 2-1 in Dhaka for a third straight South Asian crown.</div>
+  <div class="it"><b>Pakistan stun India in blind cricket thriller.</b> Pakistan chase 180 to beat India by one wicket off the last ball and reach the Asia Cup final.</div>
+
+  <div class="sec">Africa</div>
+  <div class="it"><b>Malawi treason trial stalls again.</b> Namiwa&rsquo;s case is adjourned a third time, with a new date set for 24 November.</div>
+  <div class="it"><b>Barrow vows record groundnut price.</b> Gambia&rsquo;s president promises farmers the highest price ever for the coming season.</div>
+  <div class="it"><b>Uganda&rsquo;s $2.97bn railway nears funding.</b> Kampala aims to reach financial close in January on a 272 km standard-gauge line to Kenya.</div>
+  <div class="it"><b>Angola cuts rates as inflation cools.</b> The central bank cuts its benchmark rate to 14% as inflation falls to an 11-year low.</div>
+  <div class="it"><b>Seychelles opposition pans 2027 budget.</b> Leader Bernard Georges calls it &ldquo;small change&rdquo;, with no big announcements.</div>
+
+  <div class="sec">Americas</div>
+  <div class="it"><b>Democrats take 56-seat Senate majority.</b> Mary Peltola unseats Dan Sullivan in Alaska, handing Democrats control of the Senate.</div>
+  <div class="it"><b>Measles cases hit a 40-year high.</b> US measles infections reach their highest in four decades as vaccination rates fall.</div>
+  <div class="it"><b>Hegseth flies to Colombia with C-130.</b> The US defence secretary delivers a Hercules transport plane and talks security in Bogot&aacute;.</div>
+  <div class="it"><b>US details $12bn in Venezuelan oil revenue.</b> The State Department publishes a 53-page account of oil and mineral money handled since Maduro&rsquo;s capture.</div>
+  <div class="it"><b>Argentina rout Costa Rica 7-0.</b> Argentina win 7-0 in C&oacute;rdoba, their first victory since Lionel Messi&rsquo;s international retirement.</div>
+
+  <div class="sec">Oceania</div>
+  <div class="it"><b>Australia sanctions West Bank settlers.</b> Canberra sanctions three individuals and four groups over settlement expansion and settler violence.</div>
+  <div class="it"><b>Cricket Australia opens sandpapergate forum.</b> Players will share accounts of the 2018 ball-tampering scandal; no new sanctions are expected.</div>
+
+  <div class="sec">Science &amp; Culture</div>
+  <div class="it"><b>Coral reefs face extinction in 50 years.</b> An IUCN study warns nearly all the world&rsquo;s coral reefs could vanish within five decades.</div>
+  <div class="it"><b>Pattinson named the new James Bond.</b> Robert Pattinson is named the next 007, taking over the role from Daniel Craig.</div>
+  <div class="it"><b>Dhoni retires from the IPL.</b> MS Dhoni ends his playing career and becomes mentor of Chennai Super Kings.</div>
+
 </div>
 
 <div class="footer">
   <span>All stories first reported on 18 November 2026.</span>
-  <span>Sources: Reuters, AFP, Al Jazeera, The Guardian</span>
+  <span>Sources: Reuters, AP, AFP, Al Jazeera, The Guardian</span>
 </div>
 
 </body>
