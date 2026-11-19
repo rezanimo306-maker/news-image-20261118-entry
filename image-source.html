@@ -10,66 +10,70 @@
     font-family: "DejaVu Sans", "Noto Sans", sans-serif;
     background: #f8f4e8;
     color: #191919;
-    padding: 12px 26px 8px 26px;
+    padding: 8px 26px 4px 26px;
   }
   .serif { font-family: "DejaVu Serif", "Noto Serif", serif; }
 
   /* Masthead */
-  .masthead { text-align: center; border-bottom: 4px solid #191919; padding-bottom: 5px; }
-  .masthead h1 { font-size: 40px; line-height: 1; letter-spacing: 1px; font-weight: bold; }
+  .masthead { text-align: center; border-bottom: 4px solid #191919; padding-bottom: 3px; }
+  .masthead h1 { font-size: 37px; line-height: 1; letter-spacing: 1px; font-weight: bold; }
   .masthead h1 .red { color: #b02a20; }
   .dateline {
     display: flex; justify-content: space-between; align-items: center;
-    border-bottom: 2px solid #191919; padding: 5px 2px; margin-top: 5px;
+    border-bottom: 2px solid #191919; padding: 4px 2px; margin-top: 4px;
   }
-  .dateline .date { font-size: 20px; font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
+  .dateline .date { font-size: 19px; font-weight: bold; letter-spacing: 1px; white-space: nowrap; }
   .dateline .tag { font-size: 13px; color: #555; letter-spacing: 1px; white-space: nowrap; }
 
   /* Lead story */
   .lead {
-    display: flex; gap: 16px; margin-top: 9px;
-    border-bottom: 2px solid #191919; padding-bottom: 8px;
+    display: flex; gap: 16px; margin-top: 8px;
+    border-bottom: 2px solid #191919; padding-bottom: 7px;
   }
-  .lead .art { flex: 0 0 300px; }
-  .lead .art svg { display: block; width: 300px; height: 132px; }
+  .lead .art { flex: 0 0 310px; }
+  .lead .art svg { display: block; width: 310px; height: 118px; }
   .lead .art .cap { font-size: 11px; color: #555; margin-top: 3px; line-height: 1.25; }
   .kicker {
     font-size: 12px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
     text-transform: uppercase;
   }
-  .lead h2 { font-size: 28px; line-height: 1.06; margin: 4px 0 5px 0; font-weight: bold; }
-  .lead p { font-size: 15px; line-height: 1.3; }
+  .lead h2 { font-size: 25px; line-height: 1.07; margin: 4px 0 5px 0; font-weight: bold; }
+  .lead p { font-size: 14px; line-height: 1.28; }
   .lead p b { color: #b02a20; }
 
-  /* Map strip */
-  .mapstrip {
-    display: flex; gap: 16px; align-items: center;
-    margin-top: 7px; border-bottom: 2px solid #191919; padding-bottom: 7px;
+  /* Stats band */
+  .stats {
+    display: flex; gap: 0; margin-top: 6px;
+    border-bottom: 2px solid #191919; padding-bottom: 6px;
   }
-  .mapstrip svg { flex: 0 0 400px; width: 400px; height: 58px; display: block; }
-  .mapstrip .counts { font-size: 12.5px; line-height: 1.45; color: #2b2b2b; }
-  .mapstrip .counts b { color: #b02a20; }
-  .mapstrip .counts .big { font-size: 15px; font-weight: bold; letter-spacing: 1px; }
+  .stats .label {
+    flex: 0 0 140px; font-size: 14px; font-weight: bold; letter-spacing: 1px;
+    color: #b02a20; line-height: 1.2; padding-top: 2px;
+  }
+  .stats .stat { flex: 1; padding: 0 9px; border-left: 1px solid #cfc7b4; }
+  .stats .stat:first-of-type { border-left: none; }
+  .stats .num { font-size: 16px; font-weight: bold; line-height: 1.1; white-space: nowrap; }
+  .stats .what { font-size: 10px; color: #444; line-height: 1.25; margin-top: 2px; }
 
   /* Story columns */
   .cols { columns: 3; column-gap: 16px; margin-top: 7px; }
   .sec {
-    font-size: 11.5px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
+    font-size: 11px; font-weight: bold; letter-spacing: 2px; color: #b02a20;
     text-transform: uppercase; border-bottom: 1px solid #b02a20;
-    padding-bottom: 2px; margin: 6px 0 1px 0;
+    padding-bottom: 2px; margin: 4px 0 1px 0;
     break-after: avoid; break-inside: avoid;
   }
   .sec:first-child { margin-top: 0; }
   .it {
     break-inside: avoid;
-    font-size: 11.5px; line-height: 1.24;
-    padding: 3.5px 0; border-bottom: 1px solid #cfc7b4;
+    font-size: 11px; line-height: 1.22;
+    padding: 2px 0; border-bottom: 1px solid #cfc7b4;
   }
   .it b { color: #191919; }
 
   /* Footer */
   .footer {
-    margin-top: 6px; display: flex; justify-content: space-between;
+    margin-top: 5px; display: flex; justify-content: space-between;
     font-size: 11.5px; color: #555;
   }
 </style>
@@ -81,129 +85,115 @@
 </div>
 <div class="dateline">
   <span class="date serif">WEDNESDAY, 18 NOVEMBER 2026</span>
-  <span class="tag">34 STORIES &middot; 6 CONTINENTS &middot; ONE DAY</span>
+  <span class="tag">40 STORIES &middot; 6 CONTINENTS &middot; ONE DAY</span>
 </div>
 
 <div class="lead">
   <div class="art">
-    <svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="300" height="140" fill="#16283f"/>
-      <circle cx="248" cy="26" r="17" fill="#f4d35e" opacity="0.9"/>
-      <path d="M0 100 Q 70 88 150 100 T 300 100 L 300 140 L 0 140 Z" fill="#1d3a5f"/>
-      <path d="M0 114 Q 80 104 160 114 T 300 114 L 300 140 L 0 140 Z" fill="#274b73"/>
+    <svg viewBox="0 0 310 118" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="310" height="118" fill="#16283f"/>
+      <circle cx="260" cy="22" r="15" fill="#f4d35e" opacity="0.9"/>
+      <!-- distant glow on the horizon where tankers burn -->
+      <ellipse cx="86" cy="82" rx="44" ry="9" fill="#e4572e" opacity="0.55"/>
+      <ellipse cx="86" cy="82" rx="21" ry="5" fill="#f4d35e" opacity="0.8"/>
+      <path d="M0 80 Q 78 71 156 80 T 310 80 L 310 118 L 0 118 Z" fill="#1d3a5f"/>
+      <path d="M0 93 Q 86 85 164 93 T 310 93 L 310 118 L 0 118 Z" fill="#274b73"/>
       <!-- tanker 1 -->
       <g fill="#0c1522">
-        <rect x="24" y="118" width="104" height="12" rx="2"/>
-        <rect x="44" y="106" width="28" height="12"/>
-        <rect x="100" y="112" width="8" height="7"/>
+        <rect x="50" y="97" width="106" height="12" rx="2"/>
+        <rect x="71" y="85" width="29" height="12"/>
+        <rect x="127" y="91" width="8" height="7"/>
       </g>
       <!-- tanker 2 -->
       <g fill="#0c1522">
-        <rect x="176" y="121" width="92" height="11" rx="2"/>
-        <rect x="204" y="110" width="24" height="11"/>
-      </g>
-      <!-- explosion burst -->
-      <g>
-        <path d="M228 72 L236 50 L244 66 L254 46 L260 66 L274 56 L264 74 L278 78 L260 84 L266 100 L250 88 L244 106 L236 88 L220 96 L228 80 L212 76 L228 70 Z" fill="#e4572e"/>
-        <path d="M236 74 L242 60 L248 70 L258 62 L256 76 L266 78 L254 84 L256 94 L246 86 L238 92 L240 80 L230 78 L236 72 Z" fill="#f4d35e"/>
+        <rect x="188" y="100" width="92" height="11" rx="2"/>
+        <rect x="217" y="89" width="25" height="11"/>
       </g>
       <!-- missile trail -->
-      <path d="M52 38 Q 130 10 222 62" stroke="#f8f4e8" stroke-width="2.5" fill="none" stroke-dasharray="9 6"/>
-      <circle cx="52" cy="38" r="4" fill="#f8f4e8"/>
+      <path d="M56 38 Q 135 10 230 54" stroke="#f8f4e8" stroke-width="2.5" fill="none" stroke-dasharray="9 6"/>
+      <circle cx="56" cy="38" r="4" fill="#f8f4e8"/>
     </svg>
-    <div class="cap">Tankers burn in the Strait of Hormuz after US jets struck an Iranian missile site on Qeshm Island.</div>
+    <div class="cap">Iranian drones over Bahrain and Kuwait were intercepted before dawn on Wednesday, a day after US jets struck a missile site on Qeshm Island.</div>
   </div>
   <div>
     <div class="kicker">Middle East &middot; Lead story</div>
     <h2 class="serif">US AND IRAN TRADE BLOWS IN THE STRAIT OF HORMUZ</h2>
-    <p>US jets struck a Revolutionary Guard missile site on <b>Qeshm Island</b> as three tankers caught fire in the Strait of Hormuz. Tehran hit back with drones over Bahrain — intercepted, with no damage.</p>
+    <p>Iran sent drones at US bases in Bahrain and Kuwait before dawn Wednesday, <b>18 November 2026</b>; all intercepted, no damage reported. A day earlier, US jets struck a Revolutionary Guard missile site on Qeshm Island. Three tankers caught fire in the Strait of Hormuz.</p>
   </div>
 </div>
 
-<div class="mapstrip">
-  <svg viewBox="0 0 400 64" xmlns="http://www.w3.org/2000/svg">
-    <!-- simplified world map, continents in navy, story hotspots in red -->
-    <g fill="#d8cdb2" stroke="#1d3a5f" stroke-width="1">
-      <path d="M28 16 L52 7 L86 9 L96 19 L88 29 L70 37 L58 47 L44 43 L30 33 Z"/>
-      <path d="M78 47 L96 45 L104 57 L98 63 L86 61 L78 55 Z"/>
-      <path d="M188 11 L206 5 L220 11 L216 23 L200 25 L190 19 Z"/>
-      <path d="M192 31 L212 27 L224 37 L220 55 L206 63 L196 52 L190 40 Z"/>
-      <path d="M222 7 L280 3 L320 11 L330 25 L310 38 L280 40 L250 32 L228 23 Z"/>
-      <path d="M312 54 L336 50 L342 60 L322 63 L310 58 Z"/>
-    </g>
-    <g fill="#b02a20">
-      <circle cx="52" cy="22" r="2.4"/>
-      <circle cx="88" cy="58" r="2.4"/>
-      <circle cx="202" cy="15" r="2.4"/>
-      <circle cx="206" cy="45" r="2.4"/>
-      <circle cx="238" cy="30" r="2.4"/>
-      <circle cx="262" cy="30" r="2.4"/>
-      <circle cx="296" cy="22" r="2.4"/>
-      <circle cx="300" cy="40" r="2.4"/>
-      <circle cx="330" cy="57" r="2.4"/>
-      <circle cx="70" cy="45" r="2.4"/>
-    </g>
-  </svg>
-  <div class="counts">
-    <span class="big">AROUND THE WORLD</span><br>
-    <b>Middle East 4</b> &middot; Europe 8 &middot; Asia 7 &middot; Africa 5<br>
-    Americas 5 &middot; Oceania 2 &middot; Science &amp; Culture 3
-  </div>
+<div class="stats">
+  <div class="label">BY THE<br>NUMBERS</div>
+  <div class="stat"><div class="num">$115.8bn</div><div class="what">Nvidia quarterly revenue, up 103%</div></div>
+  <div class="stat"><div class="num">11,300+</div><div class="what">Ebola cases in DR Congo</div></div>
+  <div class="stat"><div class="num">56&ndash;44</div><div class="what">Democrats&rsquo; new Senate majority</div></div>
+  <div class="stat"><div class="num">16bn miles</div><div class="what">Voyager 1 from Earth: one light-day</div></div>
+  <div class="stat"><div class="num">$81.3bn</div><div class="what">Anthropic&rsquo;s record IPO, priced at $83</div></div>
 </div>
 
 <div class="cols">
 
   <div class="sec">Middle East</div>
-  <div class="it"><b>UN warns of more cold deaths in Gaza.</b> The UN warns more displaced Palestinians will die of cold this winter; Australia, Canada, Italy and Britain press Israel to let aid in.</div>
-  <div class="it"><b>Eisenkot tapped to form Israel&rsquo;s government.</b> President Herzog asks ex-army chief Gadi Eisenkot to build a coalition, passing over caretaker PM Netanyahu.</div>
-  <div class="it"><b>Houthi rocket kills 53 soldiers.</b> A Houthi rocket strike on an army camp kills at least 53 soldiers of Yemen&rsquo;s internationally recognised government.</div>
+  <div class="it"><b>Trump&rsquo;s Board of Peace faults Israel and Hamas.</b> Its UN report says both sides failed to keep the ceasefire.</div>
+  <div class="it"><b>Kahana elected speaker of Israel&rsquo;s Knesset.</b> Matan Kahana wins the post 66&ndash;52 as coalition talks continue in Jerusalem.</div>
+  <div class="it"><b>UN warns of cold deaths in Gaza.</b> The UN says 950,000 displaced Palestinians face floods and cold in Gaza&rsquo;s fourth winter of war.</div>
 
   <div class="sec">Europe</div>
-  <div class="it"><b>Kerch Bridge hit for a second night.</b> Ukrainian strikes collapse a span of the road link to Crimea; Russia hits two bridges in Kyiv, killing at least two.</div>
-  <div class="it"><b>EU fast-tracks green energy permits.</b> Brussels reaches a provisional deal to speed permits for renewables, grids and storage across the bloc.</div>
-  <div class="it"><b>Estonia to shut Russia border in December.</b> Tallinn will close border crossings with Russia after an attempted attack on a defence company.</div>
-  <div class="it"><b>Hundreds of thousands march in Prague.</b> Protesters demand press independence as parliament debates a contested media law.</div>
-  <div class="it"><b>General strike halts ports and factories.</b> A nationwide strike in Spain disrupts ports and car plants in protest over wages and living costs.</div>
-  <div class="it"><b>Finland opens world&rsquo;s first nuclear waste tomb.</b> Helsinki authorises the world&rsquo;s first permanent repository for spent nuclear fuel.</div>
-  <div class="it"><b>Spain gets an acting ombudsman.</b> &Aacute;ngel Gabilondo ends five years in the post; deputy Teresa Jim&eacute;nez-Becerril takes over.</div>
-  <div class="it"><b>COP31 talks enter decisive phase.</b> Negotiators in Antalya work through a draft deal with 144 disputed items before Friday&rsquo;s deadline.</div>
+  <div class="it"><b>Kerch Bridge hit for a second day.</b> Ukrainian strikes collapse part of the road span; Russia hits Kyiv bridges, killing two.</div>
+  <div class="it"><b>EU lines up a &euro;45bn loan for Ukraine.</b> Brussels proposed the loan on Wednesday as Kyiv&rsquo;s allies gather in Berlin on Thursday.</div>
+  <div class="it"><b>Ukraine&rsquo;s allies head to Berlin.</b> More than 30 leaders gather on Thursday to plan a multinational force for Kyiv after a ceasefire.</div>
+  <div class="it"><b>EU fast-tracks green energy permits.</b> Brussels reaches a provisional deal to speed permits for renewables, grids and storage.</div>
+  <div class="it"><b>COP31 talks enter decisive phase.</b> Negotiators in Antalya work through a 144-article draft deal before Friday&rsquo;s deadline.</div>
+  <div class="it"><b>Russian drones hit Dnipro, six hurt.</b> Ukraine&rsquo;s air force counts 141 drones overnight, 126 downed or suppressed by morning.</div>
+  <div class="it"><b>UK balks at matching EU tariffs on China.</b> London resists alignment ahead of Friday&rsquo;s UK-EU summit in Brussels.</div>
 
   <div class="sec">Asia</div>
-  <div class="it"><b>North Korea fires missile into the Sea of Japan.</b> South Korea&rsquo;s military says Pyongyang launched a ballistic missile eastward on Wednesday.</div>
-  <div class="it"><b>Cyclone Akvan bears down on India.</b> The storm over the Bay of Bengal is set to strike Andhra Pradesh on Friday, with gusts to 120 km/h.</div>
+  <div class="it"><b>Xi and Putin meet in Shenzhen.</b> The two leaders open the APEC summit a day before trilateral talks with Trump.</div>
+  <div class="it"><b>Quad leaders reunite in Manila.</b> Trump, Modi, Takaichi and Albanese meet for the first time in two years, agreeing minerals deals and a 2027 drill.</div>
+  <div class="it"><b>Russian bombers buzz Japan and Taiwan.</b> Two Tu-95s violate Japanese airspace and enter Taiwan&rsquo;s air defence zone en route to Vietnam.</div>
+  <div class="it"><b>Cyclone Akvan bears down on India.</b> The severe storm over the Bay of Bengal is set to strike Andhra Pradesh on Friday, with gusts to 145 km/h.</div>
   <div class="it"><b>Nvidia revenue doubles to $115.8bn.</b> Quarterly sales rose 103% on booming data-centre demand; net profit hit $65.3bn.</div>
-  <div class="it"><b>Quad leaders reunite in Manila.</b> Trump, Modi, Takaichi and Albanese meet for the first time in two years, agreeing minerals deals and a 2027 patrol drill.</div>
-  <div class="it"><b>Xi opens APEC summit in Shenzhen.</b> China&rsquo;s president warns unilateralism and protectionism are on the rise as Pacific leaders gather.</div>
-  <div class="it"><b>India lift record 10th SAFF title.</b> India beat Pakistan 2-1 in Dhaka for a third straight South Asian crown.</div>
-  <div class="it"><b>Pakistan stun India in blind cricket thriller.</b> Pakistan chase 180 to beat India by one wicket off the last ball and reach the Asia Cup final.</div>
+  <div class="it"><b>Carney meets Trump at APEC.</b> Canada&rsquo;s prime minister holds talks with the US president on the Shenzhen summit sidelines.</div>
 
   <div class="sec">Africa</div>
-  <div class="it"><b>Malawi treason trial stalls again.</b> Namiwa&rsquo;s case is adjourned a third time, with a new date set for 24 November.</div>
-  <div class="it"><b>Barrow vows record groundnut price.</b> Gambia&rsquo;s president promises farmers the highest price ever for the coming season.</div>
-  <div class="it"><b>Uganda&rsquo;s $2.97bn railway nears funding.</b> Kampala aims to reach financial close in January on a 272 km standard-gauge line to Kenya.</div>
-  <div class="it"><b>Angola cuts rates as inflation cools.</b> The central bank cuts its benchmark rate to 14% as inflation falls to an 11-year low.</div>
-  <div class="it"><b>Seychelles opposition pans 2027 budget.</b> Leader Bernard Georges calls it &ldquo;small change&rdquo;, with no big announcements.</div>
+  <div class="it"><b>Ebola in DR Congo passes 11,300 cases.</b> The WHO puts deaths at 5,500 in the second-largest outbreak on record; children bear the heaviest toll.</div>
+  <div class="it"><b>Nigeria launches national edtech strategy.</b> The plan aims to lift learning outcomes with classroom technology across the country.</div>
 
   <div class="sec">Americas</div>
   <div class="it"><b>Democrats take 56-seat Senate majority.</b> Mary Peltola unseats Dan Sullivan in Alaska, handing Democrats control of the Senate.</div>
-  <div class="it"><b>Measles cases hit a 40-year high.</b> US measles infections reach their highest in four decades as vaccination rates fall.</div>
-  <div class="it"><b>Hegseth flies to Colombia with C-130.</b> The US defence secretary delivers a Hercules transport plane and talks security in Bogot&aacute;.</div>
-  <div class="it"><b>US details $12bn in Venezuelan oil revenue.</b> The State Department publishes a 53-page account of oil and mineral money handled since Maduro&rsquo;s capture.</div>
+  <div class="it"><b>US loses measles elimination status.</b> After 26 years, 5,412 cases this year &mdash; the most since 1991 &mdash; and 10 deaths.</div>
+  <div class="it"><b>Hegseth visits Colombia and Venezuela.</b> The US defence secretary delivers a C-130 to Bogot&aacute;, then signs a military pact in Caracas.</div>
   <div class="it"><b>Argentina rout Costa Rica 7-0.</b> Argentina win 7-0 in C&oacute;rdoba, their first victory since Lionel Messi&rsquo;s international retirement.</div>
+  <div class="it"><b>Colombia&rsquo;s economy stalls.</b> Growth of 0.5% in Q3 is the weakest since early 2024; output shrank 0.8% on the quarter.</div>
 
   <div class="sec">Oceania</div>
   <div class="it"><b>Australia sanctions West Bank settlers.</b> Canberra sanctions three individuals and four groups over settlement expansion and settler violence.</div>
-  <div class="it"><b>Cricket Australia opens sandpapergate forum.</b> Players will share accounts of the 2018 ball-tampering scandal; no new sanctions are expected.</div>
+  <div class="it"><b>Cricket Australia opens sandpapergate forum.</b> Players from the 2018 South Africa tour can tell their side; no new investigation.</div>
+
+  <div class="sec">Business &amp; Tech</div>
+  <div class="it"><b>Wall Street falls again despite Nvidia.</b> The Dow slides toward 50,000; Nvidia drops 2.9% even after doubling its revenue.</div>
+  <div class="it"><b>UK inflation hits a one-year high.</b> Sterling slips below $1.32 as price growth reaches its highest in a year.</div>
+  <div class="it"><b>Anthropic prices record $81.3bn IPO.</b> Shares priced at $83, above the $70&ndash;$78 range; trading as ANT starts on Thursday.</div>
+  <div class="it"><b>OpenAI launches GPT-6.2 Astra and Sol.</b> The new models reach ChatGPT Work, Codex and the API; Astra costs $8 per million input tokens.</div>
+
+  <div class="sec">Sport</div>
+  <div class="it"><b>Newcastle beat Athletic Club 2-0.</b> Headers from Dan Burn and Joelinton lift Newcastle to sixth in the Champions League.</div>
+  <div class="it"><b>Chelsea top Women&rsquo;s Champions League.</b> A late Buurman goal beats PSG 1-0; Manchester City win 2-0 at H&auml;cken.</div>
+  <div class="it"><b>Brazil rout Singapore 7-0.</b> Brazil run up seven goals in a friendly win over Singapore.</div>
+  <div class="it"><b>Ukraine edge Georgia 1-0.</b> Ukraine win their Nations League tie as Portugal beat Wales 3-2 and Norway win in Denmark.</div>
+  <div class="it"><b>Morocco and Senegal book AFCON 2027.</b> The two sides are among six teams to seal places at the finals in east Africa.</div>
 
   <div class="sec">Science &amp; Culture</div>
-  <div class="it"><b>Coral reefs face extinction in 50 years.</b> An IUCN study warns nearly all the world&rsquo;s coral reefs could vanish within five decades.</div>
-  <div class="it"><b>Pattinson named the new James Bond.</b> Robert Pattinson is named the next 007, taking over the role from Daniel Craig.</div>
-  <div class="it"><b>Dhoni retires from the IPL.</b> MS Dhoni ends his playing career and becomes mentor of Chennai Super Kings.</div>
+  <div class="it"><b>Voyager 1 reaches one light-day.</b> At 05:16 EST the 1977 probe becomes the first human-made object one light-day out &mdash; 16 billion miles.</div>
+  <div class="it"><b>Raye leads Grammy nominations with 11.</b> The British singer tops the 69th Grammy list; seven of eight album of the year nominees are women.</div>
+  <div class="it"><b>Swift wins at film-music awards.</b> Taylor Swift and Jack Antonoff take a Hollywood Music in Media Award; G&ouml;ransson wins for <i>The Odyssey</i>.</div>
+  <div class="it"><b>Composers honoured at first Ivors.</b> Daniel Pemberton is Composer of the Year; Max Richter takes the Innovation Award in London.</div>
+  <div class="it"><b>Rushdie honoured at Book Awards.</b> Salman Rushdie receives the Medal for Distinguished Contribution to American Letters in New York.</div>
 
 </div>
 
 <div class="footer">
-  <span>All stories first reported on 18 November 2026.</span>
+  <span>All stories happened, or were first reported, on 18 November 2026.</span>
   <span>Sources: Reuters, AP, AFP, Al Jazeera, The Guardian</span>
 </div>
 

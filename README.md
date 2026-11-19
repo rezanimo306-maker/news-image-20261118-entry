@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261118/rezanimo306-maker/news-image-20261118-entry/rank.svg)](https://make.fun/bounty/news-image-20261118/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 [![reward](https://make.fun/badge/news-image-20261118/rezanimo306-maker/news-image-20261118-entry/reward.svg)](https://make.fun/bounty/news-image-20261118?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261118)
 
-One image summing up the world's news of Wednesday 18 November 2026: US–Iran strikes in the Strait of Hormuz, Ukraine hitting the Kerch Bridge for a second night, a North Korean missile launch, Cyclone Akvan bearing down on India, Nvidia's record quarter, and COP31's decisive phase.
+One image summing up the world's news of Wednesday 18 November 2026: US–Iran strikes in the Strait of Hormuz, Xi and Putin meeting in Shenzhen ahead of talks with Trump, Ukraine hitting the Kerch Bridge for a second day, the EU's €45bn loan for Ukraine, Ebola passing 11,300 cases in DR Congo, Voyager 1 reaching one light-day, Nvidia's record quarter and Anthropic's record IPO.
 
 ## Run it
 
